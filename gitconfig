@@ -1,0 +1,23 @@
+[user]
+    name = Valentin Novikov
+    email = isnotvalya@no-email.host
+    ; signingkey = E3E87A51
+[core]
+    editor = vim
+    quotepath = false
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+[alias]
+    commit = commit -S
+    c = commit -S
+    cs = commit -S
+    cl = clone --recursive
+    logs = log --show-signature
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    st = status
+    co = checkout
+    br = branch
+    type = cat-file -t
+    dump = cat-file -p
+    branches = branch -a
+    tags = tag -a
